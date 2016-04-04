@@ -47,10 +47,6 @@ h1, h2 {
 	display: block
 }
 
-.main-van li{
-	
-}
-
 .banner-section {
 	background: #884dff;
 	color: white;
@@ -85,4 +81,62 @@ h1, h2 {
 .container p {
 	font-size: 25px;
 	padding-bottom: 1em;
+}
+
+.contact {
+	margin-top: 10em;
+}
+.main-footer {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: : space-between;
+    padding: 2.5em;
+    font-weight: bolder;
+    font-size: 25px
+ }
+
+/* Media Styles */
+
+@media (min-width: 720px) {
+
+.banner-section {
+	
+}
+
+.banner-text {
+	text-align: left;
+	width: 60%;
+	padding-top: 2em;
+	margin: 0;
+}
+
+.profile-image {
+	width: 40%;
+	float: right;
+	margin-right: 5em;
+}
+
+.name {
+	padding-top: 1em;
+}
+
+.portfolio-item {
+	float: left;
+	width: 50%;
+	padding-left: 1em;
+	padding: right: 1em;
+}
+
+.contact-section {
+	border: solid 1px red;
+}
+.main-nav li {
+	display: inline-block;
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
 }
