@@ -12,23 +12,30 @@
 <body>
 
 	<header class="main-header">
-			<h1 class="name"><a href="#">Ivan Garcia</a></h1>
+			<h1 class="name" id="home"><a href="">Ivan Garcia</a></h1>
 			<ul class="main-nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Contact</a></li>	
+				<li><a href="#home">Home</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#skills">Skills</a></li>	
+				<li><a href="#contact">Contact</a></li>	
 			</ul>
 	</header>
 
 	<div class="banner-section">
 		<img src="images/me.jpg" alt="Picture of Ivan Garcia" />
-		<p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excted to put all my skills to use!</p>
+		<p>Hey! I'm Ivan. I'm a front-end developer who's main focus is developing fun and efficient websites with responsive design. I believe web development is an art form that requires creativity, so I love spending hours perfecting my new project. I hope you like this portfolio and if you would like to collaborate in creating a personal or business website, <a href="#contact">contact me!</a></p>
+	</div>
+
+	<div class="sidebar">
+		<p>H</p>
+		<p>P</p>
+		<p>S</p>
+		<p>C</p>
 	</div>
 
 	<h2>Portfolio</h2>
 
-<div>
-	<div class="portfolio-section container clearfix">
+	<div class="portfolio-section container clearfix" id="portfolio">
 		<div class="portfolio-item">
 			<img src="images/portfolio-1.png" alt="Portfolio Picture">
 			<h3>Marketing Page</h3>
@@ -66,9 +73,33 @@
 			<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
 		</div>
 
+		<div class="portfolio-item">
+			<img src="images/portfolio-8.png" alt="Portfolio Picture">
+			<h3>Calculator</h3>
+			<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+		</div>
+
+		<div class="portfolio-item">
+			<img src="images/portfolio-10.png" alt="Portfolio Picture">
+			<h3>Calculator</h3>
+			<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+		</div>
+
+		<div class="portfolio-item">
+			<img src="images/portfolio-13.png" alt="Portfolio Picture">
+			<h3>Calculator</h3>
+			<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+		</div>
 	</div>
 
-	<div class="contact-section container">
+	<div class="skills-section" id="skills">
+		<h2>Skills</h2>
+			<p>HTML</p>
+			<p>CSS</p>
+			<p>JavaScript</p>
+	</div>
+
+	<div class="contact-section container" id="contact">
 		<div class="contact">
 			<h2>Contact</h2>
 			<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
@@ -77,16 +108,42 @@
 		</div>
 	</div>
 
-<footer class="main-footer">
-	<ul class="footer-nav">
-		<li class="name-footer"><a href="#">Ivan Garcia</a></li>
-		<li class="home-footer"><a href="#">Home</a></li>
-		<li class="portfolio-footer"><a href="#">Portfolio</a></li>
-		<li class="contact-footer"><a href="#">Contact</a></li>	
-		<li class="top"><a href="#">Back To Top</a></li>	
-	</ul>
-</footer>
+	<div class="social-media">
+		<a href="https://twitter.com/IvanLora88" target="_blank"><img src="images/twitter.svg" alt="twitter icon"/></a>
+		<a href="https://www.facebook.com/Ivan.GLora" target="_blank"><img src="images/facebook.svg" alt="facebook icon" /></a>
+		<a href="https://www.linkedin.com/in/ivan-garcia-64880651
+" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon"/></a>
+	</div>
 
+	<footer class="main-footer">
+		<ul class="footer-nav">
+			<li class="name-footer"><a href="#home">Ivan Garcia</a></li>
+			<li class="home-footer"><a href="#home">Home</a></li>
+			<li class="portfolio-footer"><a href="#portfolio">Portfolio</a></li>
+			<li class="contact-footer"><a href="#cpmtact">Contact</a></li>
+			<li class="top"><a href="#home">Back To Top</a></li>	
+		</ul>
+	</footer>
+
+<!--Fancy SMOOTH SCROLL from CSS-TRICKS-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			$(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
+		</script>
+		<!--End of SMOOTH SCROLL-->
 </body>
 
 
